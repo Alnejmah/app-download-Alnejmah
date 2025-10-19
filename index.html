@@ -1,48 +1,97 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alnejmah Sweets App</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
     body {
+      margin: 0;
       font-family: "Cairo", sans-serif;
-      text-align: center;
-      background-color: #f5f5f5;
-      padding-top: 100px;
-    }
-    h1 {
+      background-color: #ffffff;
       color: #333;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
     }
-    .download-links {
-      margin-top: 40px;
+
+    .logo {
+      width: 180px;
+      margin-bottom: 30px;
     }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #3b3b3b;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      width: 100%;
+      max-width: 300px;
+    }
+
     a {
-      display: inline-block;
+      display: block;
+      width: 100%;
       text-decoration: none;
       color: white;
       background-color: #0078D7;
-      padding: 15px 25px;
+      font-weight: 600;
+      padding: 14px 0;
       border-radius: 10px;
-      margin: 10px;
       font-size: 18px;
       transition: 0.3s;
     }
+
+    a.ios {
+      background-color: #111;
+    }
+
     a:hover {
-      background-color: #005fa3;
+      transform: scale(1.03);
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <h1>Download Alnejmah Sweets App</h1>
-  <p>Choose your system to download the application</p>
+  <!-- Logo -->
+  <img src="logo.png" alt="Alnejmah Sweets Logo" class="logo">
 
-  <div class="download-links">
+  <!-- Text -->
+  <h1>Download Alnejmah Sweets App</h1>
+  <p>Choose your device to start the download</p>
+
+  <!-- Buttons -->
+  <div class="buttons">
     <a href="https://play.google.com/store/apps/details?id=com.alnejmah&pli=1" target="_blank">📱 Download for Android</a>
-    <a href="https://apps.apple.com/jo/app/alnejmah-sweets/id6747391529" target="_blank">🍎 Download for ios</a>
+    <a href="https://apps.apple.com/jo/app/alnejmah-sweets/id6747391529" class="ios" target="_blank">🍎 Download for iOS</a>
   </div>
 
-</body>
+  <footer>© 2025 Alnejmah Sweets. All Rights Reserved.</footer>
 
+</body>
 </html>
